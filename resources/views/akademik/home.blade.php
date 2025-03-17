@@ -10,4 +10,4 @@
       <p>Back to <a href="/docs/5.3/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
     </div>
   </main>
-@end
+@endsection

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\MahasiswaController;
-use  App\Http\Controllers\DosenController;
+use  App\Http\Controllers\Controller\DosenController;
 
 
 // Route::get('/profil', function () {
@@ -139,6 +139,18 @@ Route::get('/home', function () {
 Route::get('/mahasiswa-controller', [MahasiswaController::class, 'index']);
 
 Route::get('/mahasiswa-show', [MahasiswaController::class, 'show']);
+
+Route::get('/insert-Sql', [MahasiswaController::class, 'insertSql']);
+Route::get('/insert-prepared', [MahasiswaController::class, 'insertPrepared']);
+Route::get('/insert-binding', [MahasiswaController::class, 'insertBinding']);
+Route::get('/update', [MahasiswaController::class, 'update']);
+Route::get('/delete', [MahasiswaController::class, 'delete']);
+Route::get('/select', [MahasiswaController::class, 'select']);
+Route::get('/select-tampil', [MahasiswaController::class, 'selectTampil']);
+Route::get('/select-view', [MahasiswaController::class, 'selectView']);
+Route::get('/select-where', [MahasiswaController::class, 'selectWhere']);
+Route::get('/statement', [MahasiswaController::class, 'statement']);
+
 
 Route::get('/dosen', [DosenController::class,'dosen']);
 Route::get('/prodi', [DosenController::class,'prodi']);
